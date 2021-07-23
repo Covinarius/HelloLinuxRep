@@ -12,7 +12,7 @@ namespace HelloLinux.Controllers
     [Route("Hello")]
     public class SpeechController : ControllerBase
     {
-        [HttpGet]
+        [HttpGet("sayHello")]
         [ProducesResponseType(typeof(string),(int)HttpStatusCode.OK)]
         public IActionResult SayHello()
         {
